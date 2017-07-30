@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9c64a6</color>
+    <color name="colorPrimaryDark">#ce93d8</color>
+    <color name="colorAccent">#ffc4ff</color>
+    <color name="colorHueso"> #F5F5DC</color>
+    <color name="colorMostaza">#f1c40f</color >
+    <color name="colorDarkMoztaza">#ba9400</color >
+    <color name="colorAmarillo">#fff653</color >
+
+
+</resources>

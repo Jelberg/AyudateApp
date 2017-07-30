@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elberg.ayudate.LoginActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/idnom"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:id="@+id/idemail"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/idnom"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_iniciarsesion"
+        android:layout_alignLeft="@+id/btn_iniciarsesion"
+        android:background="@color/colorAccent"
+        android:layout_alignStart="@+id/btn_iniciarsesion"
+        android:layout_marginBottom="26dp"
+        android:layout_alignRight="@+id/btn_iniciarsesion"
+        android:layout_alignEnd="@+id/btn_iniciarsesion" />
+
+    <Button
+        android:id="@+id/btn_registrarCuenta"
+        style="@style/buttonStyle1"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_x="49dp"
+        android:layout_y="384dp"
+        android:text="@string/Registrar"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginBottom="56dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_iniciarsesion"
+        style="@style/buttonStyle2"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_x="51dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_y="310dp"
+        android:foregroundGravity="center"
+        android:text="@string/IniciaSesion"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/btn_registrarCuenta"
+        android:layout_alignLeft="@+id/btn_registrarCuenta"
+        android:layout_alignStart="@+id/btn_registrarCuenta" />
+
+    <EditText
+        style="@style/EditTexyStyleRedondeado"
+        android:id="@+id/id"
+        android:text="Type text..."
+        android:background="@drawable/et_redondo"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>
