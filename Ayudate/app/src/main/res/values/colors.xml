@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#ce93d8</color>
     <color name="colorAccent">#ffc4ff</color>
     <color name="colorHueso"> #F5F5DC</color>
+    <color name="colorBlanco"> #FFFFFF</color>
     <color name="colorMostaza">#f1c40f</color >
     <color name="colorDarkMoztaza">#ba9400</color >
     <color name="colorAmarillo">#fff653</color >

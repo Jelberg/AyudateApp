@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.elberg.ayudate.PerfilActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradiente_relay"
+    tools:context="com.example.elberg.ayudate.PerfilActivity"
+    android:weightSum="1">
+
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:color="@android:color/transparent"
+        app:layout_collapseMode="pin"
+        app:theme="@style/AppTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <!-- Imagen de perfil -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image"
+        android:layout_width="@dimen/perfil_image_size"
+        android:layout_height="@dimen/perfil_image_size"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/perfil"
+        />
+
+    <TextView
+        android:id="@+id/tv_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USUARIO"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlanco"
+        />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/buttonTransparente"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:padding="60dp"
+        android:text="BOTON TRANSPARENTE"
+        android:textColor="@color/colorBlanco" />
 
 
-</android.support.v4.widget.DrawerLayout
-   >
+</FrameLayout>

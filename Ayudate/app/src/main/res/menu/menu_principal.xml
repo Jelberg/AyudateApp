@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@mipmap/ic_launcher"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_productos"
+            android:icon="@mipmap/ic_launcher"
+            android:title="PRODUCTOS" />
+        <item
+            android:id="@+id/nav_carrito"
+            android:icon="@mipmap/ic_launcher"
+            android:title="COMPRAS" />
+
+        <!-- Sección de configuración -->
+        <item
+            android:id="@+id/configuration_section"
+            android:title="CONFIGURACION">
+            <menu>
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:title="DESCONECTARSE" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
